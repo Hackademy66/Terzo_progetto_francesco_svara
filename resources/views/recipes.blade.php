@@ -11,15 +11,13 @@
     <div class="row">
       @foreach($recipes as $recipe)
       <div class="col-md-3 py-5 my-5">
-        <div class="card" style="width: 18rem;">
-          <img src="{{$recipe['img']}}" style="width: 18rem;" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">{{$recipe['name']}}</h5>
-            <p class="card-text">{{$recipe['console']}}</p>
-            <p class="card-text">{{$recipe['date']}}</p>
-            <a href="{{route('recipes-dettaglio', ['id' => $recipe['id']])}}" class="btn btn-primary">Visualizza prodotto</a>
-          </div>
-        </div>
+        <x-card 
+        id="{{$recipe['id']}}"
+        name="{{$recipe['name']}}"
+        portata="{{$recipe['portata']}}"
+        nation="{{$recipe['nation']}}"
+        img="{{$recipe['img']}}"
+        />
       </div>
       @endforeach
     </div>                    
