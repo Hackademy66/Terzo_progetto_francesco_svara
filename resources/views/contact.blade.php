@@ -3,7 +3,7 @@
     <div class="row">
       <div class="col-12">
         <h1>Contatti</h1>
-        <p>Inostri contatti, seguici o contattaci tramite questa pagina</p>
+        <p>I nostri contatti, seguici o contattaci tramite questa pagina</p>
       </div>    
     </div>                    
   </div>
